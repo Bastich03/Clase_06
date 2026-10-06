@@ -28,7 +28,7 @@
 			const otro = document.querySelector("#academic");
 
             // 2) La URL del "endpoint": el lugar de internet donde están los datos. En este caso, es una API que devuelve JSON.
-            const URL = "https://myjson.online/api/quick/2513c148-ed25-4052-987f-2af3fb84253d";
+            const URL = "https://api.myjson.online/v1/records/d430d367-06de-4faa-ac87-d5e4ea48429c";
 
             // 3) fetch() hace una petición HTTP a esa URL.
 
@@ -62,6 +62,7 @@
 					   } 
 					   if(x.academic_reputation> 72){
 					       otro.innerHTML += `<li>󠁧󠁢󠁥󠁮󠁧󠁿󠁧󠁢󠁥󠁮󠁧󠁿${x.name} - ${x.location}</li>`;
+						   }
                     });
                 })
 
