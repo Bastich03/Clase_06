@@ -28,7 +28,7 @@
 			const otro = document.querySelector("#academic");
 
             // 2) La URL del "endpoint": el lugar de internet donde están los datos. En este caso, es una API que devuelve JSON.
-            const URL = "https://api.myjson.online/api/quick/2513c148-ed25-4052-987f-2af3fb84253d";
+            const URL = "https://myjson.online/api/quick/2513c148-ed25-4052-987f-2af3fb84253d";
 
             // 3) fetch() hace una petición HTTP a esa URL.
 
@@ -55,8 +55,9 @@
                     // 10) qs es un array. forEach() recorre cada elemento uno por uno.
 
                     qs.forEach((x) => {
+    
                         // Nota: usar += con innerHTML dentro de un forEach funciona por ahora, pero en listas grandes es poco eficiente y seguro. 
-                        llenar.innerHTML += `<li>${x.name}</li>`;
+                        uno.innerHTML += `<li>${x.name}</li>`;
                     });
                 })
 
